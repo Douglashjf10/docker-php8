@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form action="formulario.php" method="post">
+        <label fo="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for=" for=profissao">Profissão:</label>
+        <select id="profissao" name="profissao" required>
+            <option value="Engenheiro de Software">Engenheiro de Software</option>
+            <option value="Analista de Segurança de Informação">Analista de Segurança de Informação</option>
+            <option value="Analista de Sistemas">Analista de Sistemas</option>
+            <option value="Administrador de Sistemas">Administrador de Sistemas</option>
+            <option value="Administrador do banco de dados (DBA)">Administrador do banco de dados (DBA)</option>
+            <option value="Gestor de tecnologias da informação">Gestor de tecnologias da informação</option>
+            <option value="Arquiteto de redes">Arquiteto de redes</option>
+            <option value="Desenvolvedor">Desenvolvedor</option>
+        </select><br><br>
+
+        <label>Gênero:</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">feminino</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="prefiro_nao_informar" name="genero" value="Prefiro não informar">
+        <label for="prefiro_nao_informar">Prefiro não informar</label><br>
+        <input type="radio" id="outro" name="genero" value="Outro">
+        <label for="outro">Outro</label>
+        <input type="text" id="outro_info" name="outro_info" placeholder="Qual?"><br><br>
+
+        <label>Área de Interesse:</label><br>
+        <input type="checkbox" id="bd" name="area_interesse[]" value="Banco de dados">
+        <label for="bd">Banco de dados</label><br>
+        <input type="checkbox" id="es" name="area_interesse[]" value="Engenharia de software">
+        <label for="es">Engenharia de software</label><br>
+        <input type="checkbox" id="rc" name="area_interesse[]" value="Redes de computadores">
+        <label for="rc">Redes de computadores</label><br>
+        <input type="checkbox" id="dj" name="area_interesse[]" value="Desenvolvimento de jogos">
+        <label for="dj">Desenvolvimento de jogos</label><br>
+        <input type="checkbox" id="backend" name="area_interesse[]" value="Programação back-end">
+        <label for="backend">Programação back-end</label><br>
+        <input type="checkbox" id="frontend" name="area_interesse[]" value="Programação front-end">
+        <label for="frontend">Programação front-end</label><br>
+        <input type="checkbox" id="md" name="area_interesse[]" value="Mineração de dados">
+        <label for="md">Mineração de dados</label><br><br>
+
+        <label for="fale_conosco">Fale conosco:</label><br>
+        <textarea id="fale_conosco" name="fale_conosco" rows="4" cols="50"></textarea><br><br>
+
+        <label for="promocoes">Deseja receber nossas promoções?</label>
+        <input type="checkbox" id="promocoes" name="promocoes" value="Sim"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="confirma_senha">Confirmação da senha:</label>
+        <input type="password" id="confirma_senha" name="confirma_senha" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
